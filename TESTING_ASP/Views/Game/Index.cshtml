@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Game>
+
+<h2>games</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+    </tr>
+
+    @foreach (var game in @Model)
+    {
+        <tr>
+            <td>@game.ID</td>
+            <td>@game.Title</td>
+        </tr>
+    }
+
+</table>
