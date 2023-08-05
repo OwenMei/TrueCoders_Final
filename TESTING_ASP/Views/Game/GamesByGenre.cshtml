@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Game>
 
-<h2 style="text-align: center;">Free To Play Games</h2>
+<h2 style ="text-align: center;">Genre: @ViewBag.genre</h2>
 <br>
 
 <div class="tags">
@@ -23,7 +23,7 @@
     @foreach (var game in @Model)
     {
         <tr>
-            <td><img src = "@game.Thumbnail" alt="@game.Title image"></td>
+            <td><img src="@game.Thumbnail" alt="@game.Title image"></td>
             <td>
                 <p style="font-family: Impact; font-size: 24px">@game.Title</p>
                 <p><strong>Average Rating</strong>: @game.AverageRating</p>

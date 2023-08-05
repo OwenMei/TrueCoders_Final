@@ -1,0 +1,31 @@
+﻿@model GameReview
+
+<h2>Edit Review For @Model.GameName</h2>
+
+@using (Html.BeginForm("EditReviewToDatabase", "Game", "Post"))
+{
+    <input asp-for="ReviewID" type="hidden" value="@Model.ReviewID" />
+
+    <label asp-for="Review" class="control-label">Edit Review</label>
+    <input type="text" name="Edit Review" class="form-control" value="@Model.Review"/>
+
+    <div class="form-group">
+        <label for="">Select a Rating</label>
+        <select class="form-control" name="Rating">
+            <option value="@Model.Rating">@Model.Rating Star</option>
+            @for (int i = 1; i <= 5; i++)
+            {
+                if(i == Model.Rating)
+                {
+                    continue;
+                }
+                <option value="@i">@i Star</option>
+            }
+        </select>
+    </div>
+
+    <br>
+    <input type="submit" value="Confirm Edit" class="btn btn-primary" />
+}
+<br>
+<a class="btn btn-primary" href="@Url.Action("DeleteReview", "Game", new { id = Model.ReviewID })">Delete Review</a>

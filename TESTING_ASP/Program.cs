@@ -1,3 +1,6 @@
+using MySql.Data.MySqlClient;
+using System.Data;
+
 namespace TESTING_ASP
 {
     public class Program
@@ -10,6 +13,15 @@ namespace TESTING_ASP
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddScoped<IGamesRepository, GamesRepository>();
+
+            builder.Services.AddScoped<IDbConnection>((s) =>
+            {
+                IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("freegames"));
+                conn.Open();
+                return conn;
+            });
+
+            builder.Services.AddTransient<IReviewRepository, ReviewsRepository>();
 
             var app = builder.Build();
 

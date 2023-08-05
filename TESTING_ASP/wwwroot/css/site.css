@@ -16,3 +16,16 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.tags {
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.tag {
+    margin: 15px;
+    font-family: Impact;
+    font-size: 16px;
+    text-decoration: none;
+}

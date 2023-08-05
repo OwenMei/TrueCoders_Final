@@ -16,16 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\owenz\OneDrive\Desktop\Repos\TESTING_ASP\TESTING_ASP
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Game/CreateReview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxDcmVhdGVSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Game/GamesByGenre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxHYW1lc0J5R2VucmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Game/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Game/UpdateReview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxVcGRhdGVSZXZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Game/ViewReview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxWaWV3UmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/owenz/OneDrive/Desktop/Repos/TESTING_ASP/TESTING_ASP/Views/Shared/Error.cshtml]

@@ -1,0 +1,26 @@
+﻿@model GameReview
+
+<h2>New Review For @ViewBag.gameTitle</h2>
+
+@using (Html.BeginForm("AddReviewToDatabase", "Game", "Post"))
+{
+    <input asp-for="ReviewID" type="hidden" value="" />
+
+    <input asp-for="GameName" type="hidden" value="@ViewBag.gameTitle" />
+
+    <label asp-for="Review" class="control-label">Enter a Review</label>
+    <input type="text" name="Review" class="form-control" />
+
+    <div class="form-group">
+        <label for="">Select a Rating</label>
+        <select class="form-control" name="Rating" value="">
+            @for(int i = 1; i<=5; i++)
+            {
+                <option value="@i">@i Star</option>
+            }
+        </select>
+    </div>
+
+    <br>
+    <input type="submit" value="Post Review" class="btn btn-primary" />
+}

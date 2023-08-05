@@ -4,8 +4,10 @@
     {
         public int ID { get; set; }
         public string Title { get; set; }
-        //public string thumbnail { get; set; }
-        //public string short_description { get; set; }
+        public string Thumbnail { get; set; }
+        public string Genre { get; set; }
+        public string ShortDescription { get; set; }
+        public double AverageRating { get; set; }
         ////public string game_url { get; set; }
         //public string genre { get; set; }
         //public string platform { get; set; }

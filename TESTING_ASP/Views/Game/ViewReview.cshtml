@@ -1,0 +1,39 @@
+﻿
+@model IEnumerable<GameReview>
+
+<h2>Reviews for @ViewBag.gameName</h2>
+<br>
+<br>
+
+<div style="display: block;">
+    <a href="@Url.Action("CreateReview", "Game", new { gameTitle = @ViewBag.gameName })">Add a Review!</a>
+</div>
+
+
+<h3>Reviews:</h3>
+@if(Model.Count() == 0)
+{
+    <br>
+    <br>
+	<h3>It seems like there aren't any reviews for @ViewBag.gameName as of now</h3>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>Review</th>
+            <th>Rating</th>
+            <th></th>
+        </tr>
+
+        @foreach (var review in @Model)
+        {
+            <tr>
+                <td>@review.Review</td>
+                <td>@review.Rating</td>
+                <td><a href="/Game/UpdateReview/@review.ReviewID">Edit Review</a></td>
+            </tr>
+        }
+
+    </table>
+}
