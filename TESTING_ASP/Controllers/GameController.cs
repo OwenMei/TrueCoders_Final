@@ -45,8 +45,9 @@ namespace TESTING_ASP.Controllers
 
         public IActionResult EditReviewToDatabase(GameReview gamereview)
         {
+            var gameReview = _reviewRepo.GetGameReview(gamereview.ReviewID);
             _reviewRepo.EditReview(gamereview);
-            return RedirectToAction("ViewReview", new { name = gamereview.GameName});
+            return RedirectToAction("ViewReview", new { name = gameReview.GameName });
         }
         public IActionResult DeleteReview(int id)
         {
@@ -66,7 +67,7 @@ namespace TESTING_ASP.Controllers
         {
             ViewBag.genre = genre;
             ViewBag.genres = _game.GetAllGenres();
-            var gamesWithGenre = _game.GamesOfGenre(genre);
+            IEnumerable<Game> gamesWithGenre = _game.GamesOfGenre(_reviewRepo, genre);
             return View(gamesWithGenre);
         }
     }

@@ -67,6 +67,20 @@ namespace TESTING_ASP
             return gamesWithGenre;
         }
 
+        public IEnumerable<Game> GamesOfGenre(IReviewRepository repo, string genre)
+        {
+            var allGames = GetAllGames(repo);
+            List<Game> gamesWithGenre = new List<Game>();
+            foreach (var game in allGames)
+            {
+                if (game.Genre == genre)
+                {
+                    gamesWithGenre.Add(game);
+                }
+            }
+            return gamesWithGenre;
+        }
+
         public string[] GetAllGenres()
         {
             HashSet<string> listOfGenres = new HashSet<string>();

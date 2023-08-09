@@ -9,6 +9,7 @@ namespace TESTING_ASP
         public IEnumerable<Game> GetAllGames(IReviewRepository repo);
         public string[] GetAllGenres();
         public IEnumerable<Game> GamesOfGenre(string genre);
+        public IEnumerable<Game> GamesOfGenre(IReviewRepository repo, string genre);
         public double ReturnAverageRating(IReviewRepository repo, string gamename);
     }
 }

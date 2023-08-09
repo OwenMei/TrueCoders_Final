@@ -50,7 +50,7 @@ namespace TESTING_ASP
 
         public void EditReview(GameReview review)
         {
-            _conn.Execute("UPDATE REVIEWS SET , Review = @review, Rating = @rating WHERE ReviewID = @id", 
+            _conn.Execute("UPDATE REVIEWS SET Review = @review, Rating = @rating WHERE ReviewID = @id", 
                 new {review = review.Review, rating = review.Rating, @id = review.ReviewID});
         }
     }
